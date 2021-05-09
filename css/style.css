@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
 * {
   font-family: "Poppins", sans-serif;
-  color: #b69d5b;
+  color: #3439b0;
 }
 
 p {
@@ -184,45 +184,45 @@ p {
 
 @keyframes rotate1 {
   0% {
-    transform: rotate(0deg) scale(0.7);
+    transform: scale(0.7);
   }
 
   25% {
-    transform: rotate(10deg) scale(1);
+    transform: scale(1);
   }
 
   50% {
-    transform: rotate(0deg) scale(1.2);
+    transform: scale(1.2);
   }
 
   75% {
-    transform: rotate(-10deg) scale(1);
+    transform: scale(1);
   }
 
   100% {
-    transform: rotate(0deg) scale(0.7);
+    transform: scale(0.7);
   }
 }
 
 @keyframes rotate2 {
   0% {
-    transform: rotate(10deg) scale(1);
+    transform: scale(1);
   }
 
   25% {
-    transform: rotate(0deg) scale(0.7);
+    transform: scale(0.7);
   }
 
   50% {
-    transform: rotate(-10deg) scale(1.2);
+    transform: scale(1.2);
   }
 
   75% {
-    transform: rotate(0deg) scale(0.7);
+    transform: scale(0.7);
   }
 
   100% {
-    transform: rotate(10deg) scale(1);
+    transform: scale(1);
   }
 }
 
@@ -239,8 +239,8 @@ p {
   top: 0;
   left: 0;
   position: absolute;
-  animation: rotate1 7s infinite;
-  opacity: 0.8;
+  animation: rotate1 7s ease-in infinite;
+  opacity: 0.5;
 }
 
 .frame2 {
@@ -248,8 +248,8 @@ p {
   top: 0;
   right: 0;
   position: absolute;
-  animation: rotate2 7s infinite;
-  opacity: 0.8;
+  animation: rotate2 7s ease-in infinite;
+  opacity: 0.5;
 }
 @media (min-width: 992px) {
   .banner {

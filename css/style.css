@@ -279,7 +279,7 @@ p {
     max-width: 50%;
   }
   .frame1 {
-    width: 30%;
+    width: 10%;
     bottom: 0;
     left: 0;
     position: absolute;
@@ -287,7 +287,7 @@ p {
   }
 
   .frame2 {
-    width: 30%;
+    width: 10%;
     top: 0;
     right: 0;
     position: absolute;

@@ -114,7 +114,8 @@ p {
   right: 0;
   text-align: center;
   animation: blink 2s linear infinite;
-  margin-bottom: 20px;
+  margin-bottom: 120px;
+  color: white;
 }
 .banner .clouds img {
   position: absolute;
@@ -292,5 +293,10 @@ p {
     right: 0;
     position: absolute;
     animation: rotate2 7s infinite;
+  }
+
+  .banner .text h5 {
+    margin-bottom: 20px;
+    color: #3439b0;
   }
 }

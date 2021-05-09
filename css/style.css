@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  color: #b69d5b;
+}
+
+p {
+  font-size: 18px;
+}
+
+.welcome {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff6f6;
+  position: fixed;
+  z-index: 1000;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/img/bg1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: romantic;
+}
+
+.text-welcome {
+  color: #b69d5b;
+  font-size: 10vh;
+  margin-top: 50px;
+}
+
+.btn-open {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  border: none;
+  font-family: "Merienda One", cursive;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition: 1s;
+  width: 100px;
+  height: 100px;
+}
+.btn-open:hover {
+  background-color: #8d7432;
+  color: #f4eeed;
+  transition: 1s;
+}
+.muncul {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../assets/img/bg1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+}
+
+.title {
+  font-family: "Merienda One", cursive;
+}
+
+.mubarok {
+  width: 100%;
+}
+
+.mubarok-on {
+  animation: reveal 3s ease-in-out;
+}
+
+.banner .clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.banner .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner .text h5 {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  animation: blink 2s linear infinite;
+  margin-bottom: 20px;
+}
+.banner .clouds img {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  animation: animate1 calc(3s * var(--i)) linear infinite;
+}
+.img-main {
+  max-width: 80%;
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg) scale(0.7);
+  }
+
+  25% {
+    transform: rotate(10deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(0deg) scale(1.2);
+  }
+
+  75% {
+    transform: rotate(-10deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(0.7);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(10deg) scale(1);
+  }
+
+  25% {
+    transform: rotate(0deg) scale(0.7);
+  }
+
+  50% {
+    transform: rotate(-10deg) scale(1.2);
+  }
+
+  75% {
+    transform: rotate(0deg) scale(0.7);
+  }
+
+  100% {
+    transform: rotate(10deg) scale(1);
+  }
+}
+
+.frame {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-image: url(../assets/img/bg.png);
+}
+
+.frame1 {
+  width: 20%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: rotate1 7s infinite;
+  opacity: 0.8;
+}
+
+.frame2 {
+  width: 20%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  animation: rotate2 7s infinite;
+  opacity: 0.8;
+}
+@media (min-width: 992px) {
+  .banner {
+    height: 100vh;
+  }
+  .banner #text {
+    font-size: 5em;
+  }
+
+  .banner .clouds img {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: animate1 calc(3s * var(--i)) linear infinite;
+  }
+
+  .mubarok {
+    width: 30%;
+    margin-top: -200px;
+  }
+
+  .banner .text h5 {
+    font-size: 2em;
+    margin-bottom: 50px;
+  }
+  .img-main {
+    max-width: 50%;
+  }
+  .frame1 {
+    width: 30%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    animation: rotate1 7s infinite;
+  }
+
+  .frame2 {
+    width: 30%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    animation: rotate2 7s infinite;
+  }
+}
